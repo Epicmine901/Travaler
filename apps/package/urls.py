@@ -1,5 +1,6 @@
 from django.urls import path
-from . import views
+from .views import packagesView
 
 urlpatterns = [
+    path('', packagesView, name='packages'),
 ]
