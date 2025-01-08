@@ -17,6 +17,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'users.User'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+REGISTER_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -30,6 +34,7 @@ INSTALLED_APPS = [
     #global
     'debug_toolbar',
     #local
+    'users',
     'apps.about',
     'apps.base',
     'apps.blog',
